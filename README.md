@@ -4,8 +4,10 @@ WIP Coustom Bazzite Htpc
 -rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dillydilly1990/htpc:latest
 
 # Modifications
-- Rclone automount for mounting smb shares from a nas
-
+- Rclone automount service for mounting smb shares from cloud or nas
+- Kodi
+- Emudeck installed by default
+- 
 # Links
 
 - [Aurora](https://getaurora.dev/)
