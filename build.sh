@@ -7,11 +7,11 @@ set -ouex pipefail
 # Change the autologin from gamescope-session
 # cp  /etc/sddm.conf.d/steamos.conf
 
-
+# --- Install Flatpacks
+flatpak install -y --noninteractive flathub tv.kodi.Kodi
 # --- Install Fedora Fackages ---
 
 rpm-ostree install rclone
-rpm-ostree install kodi
 
 # --- Enable System Unit Files ---
 
