@@ -11,6 +11,7 @@ set -ouex pipefail
 # --- Install Fedora Fackages ---
 
 rpm-ostree install rclone
+rpm-ostree install kodi
 
 # --- Enable System Unit Files ---
 
