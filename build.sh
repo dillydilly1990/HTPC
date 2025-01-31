@@ -25,3 +25,9 @@ flatpak install -y --noninteractive flathub tv.kodi.Kodi
 
 systemctl enable podman.socket
 systemctl enable tailscaled
+# Remove the autologin to gamescope-session
+rm /etc/sddm.conf.d/steamos.conf
+
+# Undo some bazzite-deck specific services we do not need anymore
+systemctl disable bazzite-autologin.service && \
+systemctl enable ublue-update.timer
