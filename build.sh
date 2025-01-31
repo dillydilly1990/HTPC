@@ -13,6 +13,7 @@ set -ouex pipefail
 dnf install -y tmux 
 dnf install -y rclone
 flatpak install flathub tv.kodi.Kodi
+--force-yes
 
 # Use a COPR Example:
 #
