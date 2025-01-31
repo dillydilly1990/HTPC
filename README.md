@@ -4,7 +4,7 @@ WIP Coustom Bazzite Htpc
 -rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dillydilly1990/htpc:latest
 
 # Modifications
-- Rclone
+- Rclone automount for mounting smb shares from a nas
 
 # Links
 
