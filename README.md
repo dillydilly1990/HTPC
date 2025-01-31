@@ -1,6 +1,7 @@
 WIP Coustom Bazzite Htpc
 
-# Rebase: rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dillydilly1990/htpc:latest
+# Rebase:
+-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dillydilly1990/htpc:latest
 
 # Modifications
 - Rclone
