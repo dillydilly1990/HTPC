@@ -6,7 +6,7 @@ WIP Coustom Bazzite Htpc
 # Modifications
 - Rclone automount service for mounting smb shares from cloud or nas
 # WIP
-- Kodi
+- Kodi with artic fuse skin auto launch on startup 
 - Emudeck installed by default
 - 
 # Links
