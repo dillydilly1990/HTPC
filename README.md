@@ -5,6 +5,7 @@ WIP Coustom Bazzite Htpc
 
 # Modifications
 - Rclone automount service for mounting smb shares from cloud or nas
+# WIP
 - Kodi
 - Emudeck installed by default
 - 
