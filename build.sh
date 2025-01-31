@@ -11,6 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf install -y tmux 
+dnf install -y rclone
+dnf install -y kodi
 
 # Use a COPR Example:
 #
@@ -22,3 +24,5 @@ dnf install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl start tailscaled
+systemctl enable tailscaled
