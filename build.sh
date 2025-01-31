@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+### Install repos
+rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -12,7 +15,8 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf install -y tmux 
 dnf install -y rclone
-flatpak install -y --noninteractive flathub tv.kodi.Kodi
+dnf install -y kodi
+
 
 # Use a COPR Example:
 #
@@ -25,9 +29,9 @@ flatpak install -y --noninteractive flathub tv.kodi.Kodi
 
 systemctl enable podman.socket
 systemctl enable tailscaled
-# Remove the autologin to gamescope-session
-rm /etc/sddm.conf.d/steamos.conf
 
-# Undo some bazzite-deck specific services we do not need anymore
-systemctl disable bazzite-autologin.service && \
-systemctl enable ublue-update.timer
+#### Remove the autologin to gamescope-session
+# rm /etc/sddm.conf.d/steamos.conf
+#### Undo some bazzite-deck specific services we do not need anymore
+# systemctl disable bazzite-autologin.service && \
+# systemctl enable ublue-update.timer
