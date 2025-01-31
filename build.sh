@@ -12,8 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf install -y tmux 
 dnf install -y rclone
-flatpak install flathub tv.kodi.Kodi
---force-yes
+flatpak install --force flathub tv.kodi.Kodi
 
 # Use a COPR Example:
 #
