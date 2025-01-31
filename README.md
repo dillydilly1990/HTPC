@@ -1,7 +1,6 @@
 # image-template
 
-# Rebase: rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx:latest
-
+# Rebase: rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dillydilly1990/htpc:sha256-61e753344029199848bd0a8f83f9ff9efc1b5f1adaec895401311dd6b5ac255f.sig
 
 # Purpose
 
