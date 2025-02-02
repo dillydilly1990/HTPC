@@ -4,6 +4,10 @@ set -ouex pipefail
 
 # --- Copy Custom Files & Overides ---
 
+
+# --- Install Emudeck ---
+curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
+
 # Change the autologin from gamescope-session
 # cp  /etc/sddm.conf.d/steamos.conf
 
