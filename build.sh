@@ -9,7 +9,7 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install Kodi flatpack
-mkdir /tmp/build/kodi/
+mkdir -p /tmp/build/kodi/
 cd /tmp/build/kodi/
 git clone https://github.com/flathub/tv.kodi.Kodi.git
 flatpak-builder build-dir --user --ccache --force-clean --install tv.kodi.Kodi.yml
