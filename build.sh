@@ -8,8 +8,7 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install Kodi
-mkdir -p /var/home/tmp/
-cd /var/home/tmp/
+
 flatpak install -y --noninteractive flathub tv.kodi.Kodi
 
 # Change the autologin from gamescope-session
