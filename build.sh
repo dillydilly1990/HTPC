@@ -7,9 +7,11 @@ set -ouex pipefail
 # --- Install Emudeck ---
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
-# --- Install Kodi
-
-flatpak install -y --noninteractive https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
+# --- Install skip-1s app
+mkdir
+cd /tmp/
+curl https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
+flatpak install -y --noninteractive flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
 
 # Change the autologin from gamescope-session
 # cp  /etc/sddm.conf.d/steamos.conf
