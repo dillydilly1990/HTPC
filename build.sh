@@ -8,8 +8,9 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install Kodi
-
-flatpak install -y --noninteractive flathub tv.kodi.Kodi
+rpm-ostree install --nogpgcheck \
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+rpm-ostree install kodi
 
 # Change the autologin from gamescope-session
 # cp  /etc/sddm.conf.d/steamos.conf
