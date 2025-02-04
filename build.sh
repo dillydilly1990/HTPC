@@ -8,7 +8,7 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install Kodi
-sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 rpm-ostree install kodi
 
 # Change the autologin from gamescope-session
