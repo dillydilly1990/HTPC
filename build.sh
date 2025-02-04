@@ -8,7 +8,7 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install skip-1s app
-mkdir
+mkdir /tmp/
 cd /tmp/
 curl https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
 flatpak install -y --noninteractive flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
