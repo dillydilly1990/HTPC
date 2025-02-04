@@ -9,6 +9,8 @@ set -ouex pipefail
 
 # --- Install Kodi
 
+flatpak install -y --noninteractive https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#
+
 # Change the autologin from gamescope-session
 # cp  /etc/sddm.conf.d/steamos.conf
 
