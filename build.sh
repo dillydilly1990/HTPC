@@ -8,7 +8,6 @@ set -ouex pipefail
 #curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash
 
 # --- Install Kodi
-rpm-ostree install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 rpm-ostree install kodi
 
 # Change the autologin from gamescope-session
