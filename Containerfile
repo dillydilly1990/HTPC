@@ -1,5 +1,6 @@
 FROM ghcr.io/ublue-os/bazzite-deck:stable
 
+# --- BLUE BUILD MODULE ---
 # `yq` be used to pass BlueBuild modules configuration written in yaml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
