@@ -10,11 +10,15 @@ RUN \
   # add in the script that sets up the module run environment
   --mount=type=bind,from=ghcr.io/blue-build/cli/build-scripts:latest,src=/scripts/,dst=/tmp/scripts/ \
 # run the module
+
 config=$'\
-type:  \n\
+type: default-flatpaks \n\
+notify: true \n\
 install: \n\
     - / \n\
     - / \n\
+remove: []
+   # - org.gnome.eog
 ' && \
 /tmp/scripts/run_module.sh "$(echo "$config" | yq eval '.type')" "$(echo "$config" | yq eval -o=j -I=0)"
 
