@@ -15,7 +15,7 @@ config=$'\
 type: default-flatpaks \n\
 notify: true \n\
 install: \n\
-    - tv.kodi.Kodi / \n\
+  - tv.kodi.Kodi / \n\
 # remove: []
    # - org.gnome.eog
 ' && \
