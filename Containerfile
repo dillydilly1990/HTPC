@@ -15,9 +15,8 @@ config=$'\
 type: default-flatpaks \n\
 notify: true \n\
 install: \n\
-    - / \n\
-    - / \n\
-remove: []
+    - tv.kodi.Kodi / \n\
+# remove: []
    # - org.gnome.eog
 ' && \
 /tmp/scripts/run_module.sh "$(echo "$config" | yq eval '.type')" "$(echo "$config" | yq eval -o=j -I=0)"
