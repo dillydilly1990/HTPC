@@ -15,6 +15,7 @@ set -ouex pipefail
 
 # --- Install Rclone ---
 rpm-ostree install rclone
+rpm-ostree install kodi
 
 # --- Enable System Unit Files ---
 systemctl enable podman.socket
