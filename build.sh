@@ -16,7 +16,7 @@ echo 'build and test'
 make
 ./flex-launcher
 echo 'install'
-make install
+make -n install
 
 # --- systemd ---
 systemctl enable podman.socket
