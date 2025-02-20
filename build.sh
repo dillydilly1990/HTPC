@@ -11,7 +11,7 @@ git clone https://github.com/complexlogic/flex-launcher.git
 cd flex-launcher
 mkdir build && cd build
 echo 'generate make file'
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_INSTALL_PREFIX=/var/lib/alternatives
 echo 'build and test'
 make
 ./flex-launcher
